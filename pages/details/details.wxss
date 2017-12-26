@@ -1,0 +1,134 @@
+@import "../../utils/toast/index.wxss";
+.verify-title{
+  width: 650rpx;
+   margin: 70rpx 50rpx;
+}
+.psection{
+  color:#ccc
+}
+.btn-area{
+  margin-top: 40rpx;
+  box-sizing: border-box;
+  width: 100%;
+ color:#FFFFFF;
+  background-color: #CEAB6B;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+.page-input{
+  border: 1px solid #CEAB6B;
+  height: 90rpx;
+}
+.weui-input{
+  padding: 10rpx 20rpx;
+  line-height: 70rpx;
+  height: 70rpx;
+  font-size: 28rpx;
+  color: #111;
+}
+.verify-swiper{
+  width: 690rpx;
+  margin-top: 80rpx;
+}
+.ver-list{
+  overflow: hidden;
+  
+  background: #fff;
+  padding: 30rpx
+}
+swiper-item{
+
+}
+swiper{
+  height: 210rpx;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.ver-img{
+  width:240rpx;
+  height: 150rpx;
+  float: left
+}
+.slide-image{
+  width:240rpx;
+  height: 150rpx
+}
+.ver-info{
+   width:360rpx;
+  height: 150rpx;
+  float: right
+}
+.ver-name{
+  font-size: 32rpx;
+  width: 380rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  overflow: hidden;
+  margin-bottom: 30rpx
+}
+.ver-date{
+  font-size: 28rpx;
+  color: #666
+}
+.ver-time{
+  font-size: 28rpx;
+  color: #999
+}
+.verify-swiper{
+  background: #FAFAFA;
+  padding: 30rpx
+}
+.verify-info{
+  width: 100%;
+  position: relative
+}
+.triangle{
+  position: absolute;
+  width:0; 
+        height:0;
+        border-width:12rpx;
+        border-style:solid;
+        border-color:#fafafa  #fafafa  #CEAB6B  #fafafa;
+    top:-20rpx;
+    left: 100rpx;
+}
+.verify-zs{
+  font-size: 28rpx;
+  padding: 50rpx 30rpx 0 30rpx;
+  font-weight: bold 
+}
+.verify-num{
+   font-size: 64rpx;
+     padding: 10rpx 30rpx 0 30rpx;
+  font-weight: bold 
+}
+.verify-mx{
+  border-top:1px solid #D6D5D3;
+  margin-top: 40rpx;
+line-height: 80rpx;
+height: 80rpx;
+font-size: 28rpx;
+font-weight: bold;
+padding: 0 30rpx;
+}
+.verify-list{
+    border-top:1px solid #D6D5D3;
+line-height: 80rpx;
+height: 80rpx;
+font-size: 28rpx;
+padding: 0 30rpx;
+}
+.time{
+  width: 50%;
+  text-align: left;
+  float: left
+}
+.phone{
+  width: 30%;text-align: left;
+  float: left
+}
+.code{
+  width: 20%;text-align: left;
+  float: left
+}

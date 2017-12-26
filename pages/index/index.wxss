@@ -1,0 +1,91 @@
+
+@import "../../utils/toast/index.wxss";
+/**index.wxss**/
+.userinfo {
+    display: flex;
+      flex-direction: column;
+        align-items: center;
+}
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main{
+  font-size: 36rpx;
+}
+.second{
+  font-size: 28rpx;
+}
+.usermotto{
+  width: 100%;
+  margin-top: 90rpx;
+}
+.page-section{
+  width: 100%;
+  margin-bottom: 50rpx;
+}
+
+.page-section-title{
+  font-size: 24rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+.btn-area{
+  margin-top: 60rpx;
+  box-sizing: border-box;
+  width: 100%;
+ color:#FFFFFF;
+  background-color: #CEAB6B;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+.cooperation{
+  cursor: pointer;
+     position: fixed;
+     bottom: 60rpx;
+     box-sizing: border-box;
+     width: 650rpx;
+     color:#111;
+     background-color: #fff;
+     height: 90rpx;
+     line-height: 90rpx;
+     text-align: center;
+     font-size: 32rpx;
+     border: 1px solid #111;
+     
+}
+.psection{
+  font-size: 24rpx;
+  color:#ccc;
+}
+.page-input{
+  height: 90rpx;
+  border-bottom: 1px solid #ccc;
+  line-height: 90rpx;
+  font-size: 28rpx;
+}
+.weui-input{
+  height: 50rpx;
+  line-height: 50rpx;
+  padding-top: 20rpx;
+  font-size: 32rpx
+}
+.code{
+  width: 60%;
+  float: left
+}
+.sent{
+  border: none;
+  width: 180rpx;
+  float: right;
+  height: 68rpx;
+  line-height: 68rpx;
+  color: #111;
+  text-align: center;
+  font-size: 24rpx;
+  background: #fff;
+}

@@ -1,0 +1,46 @@
+<!--details.wxml-->
+<import src="../../utils/toast/index.wxml"/>
+<template is="zan-toast" data="{{ zanToast }}"></template>
+
+<view class="container-detail">
+  <view class="verify-title">
+    <view class="page-input">
+      <input class="weui-input" name="phone" placeholder="请输入客户出示的核销码"  placeholder-class="psection" bindinput="bindVerifyCodeInput"/>
+    </view>
+    <view class="btn-area" bindtap="actionSheetTap">
+    核销
+   </view>
+  </view>
+
+  <view class="verify-swiper">
+       <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="changeindex">
+          <block wx:for="{{productList}}" >
+            <swiper-item>
+              <view class="ver-list">
+                <view class="ver-img">
+                    <image src="{{item.showPic}}" class="slide-image" />
+                </view>
+                <view class="ver-info">
+                  <view class="ver-name">{{item.showTitle}}</view>
+                  <view class="ver-date">有效期</view>
+                  <view class="ver-time">{{item.startTime}} 至 {{item.endTime}}</view>
+                </view>
+              </view>
+             
+            </swiper-item>
+          </block>
+        </swiper>
+  </view>
+  <view  class="verify-info">
+      <view class="triangle"></view>
+      <view class="verify-zs">核销总数</view>
+      <view class="verify-num">{{productNum}}</view>
+      <view class="verify-mx">核销明细</view>
+      <view class="verify-list" wx:for="{{productInfo}}">
+          <view class="time">{{item.verificationTime}} </view>
+          <view class="phone">{{item.phone}} </view>
+          <view class="code">{{item.verificationCode}} </view>
+      </view>
+  </view>
+</view>

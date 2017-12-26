@@ -1,0 +1,36 @@
+<import src="../../utils/toast/index.wxml"/>
+<template is="zan-toast" data="{{ zanToast }}"></template>
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view class="title">
+      <view class="main">商圈一卡通</view>
+      <view class="second">手机登录</view>
+    </view>
+  </view>
+  <view class="usermotto">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+     
+
+      <view class="page-section">
+        <view class="page-section-title">你的手机登录</view>
+            <view class="page-input">
+              <input class="weui-input" name="phone" placeholder-class="psection" placeholder="点击输入手机号"  bindinput="bindPhoneInput" type='number'/>
+            </view>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title">接收到的验证码</view>
+            <view class="page-input">
+              <input class="weui-input code" name="code" placeholder-class="psection" placeholder="点击输入验证码" bindinput="bindCodeInput"/>
+              <button class='sent' bindtap="setcode"  disabled="{{!canClick}}">{{canClick?"发送验证码":time+"s"}}</button>
+            </view>
+      </view>
+      <view class="btn-area" bindtap="logIn">
+        登录
+      </view>
+    </form>
+  </view>
+  <view bindtap="actionSheetTap"  class="cooperation">
+    申请合作
+  </view>
+</view>
