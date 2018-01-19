@@ -11,6 +11,24 @@ Page({
     time:30,
     hzphone:""
   },
+  //是否已登录
+  // onLoad: function () {
+  //   let _this = this;
+  //   wx.request({
+  //     url: url + "/login/islogin",
+  //     data: {
+  //       token: wx.getStorageSync('token'),
+  //     },
+  //     success: function (res) {
+  //       console.log(res)
+  //       if (res.data.status == 1) {
+  //          wx.navigateTo({
+  //            url: '../details/details'
+  //         })
+  //       }
+  //     }
+  //   })
+  // },
   //申请合作
   actionSheetTap: function () {
     wx.request({
@@ -62,7 +80,9 @@ Page({
           _this.setData({
             canClick: false
           })
-          this.inter = setInterval(function () {
+          _this.showZanToast("短信已发送")
+          wx.setStorageSync("token", "")
+          _this.inter = setInterval(function () {
             _this.setData({
               time: _this.data.time - 1
             })
@@ -86,18 +106,18 @@ Page({
     //登录
   logIn: function () {
     let _this=this;
-    wx.request({
-      url: url + "/login/islogin",
-      data: {
-        token: wx.getStorageSync('token'),
-      },
-      success: function (res) {
-        console.log(res)
-        if (res.data.status == 1) {
-          wx.navigateTo({
-            url: '../details/details'
-          })
-        } else if(res.data.status == 0){
+    // wx.request({
+    //   url: url + "/login/islogin",
+    //   data: {
+    //     token: wx.getStorageSync('token'),
+    //   },
+    //   success: function (res) {
+    //     console.log(res)
+    //     if (res.data.status == 1) {
+    //       wx.navigateTo({
+    //         url: '../details/details'
+    //       })
+    //     } else if(res.data.status == 0){
           let rep = /^1[3|4|5|7|8][0-9]\d{8}$/;
           if (!_this.data.inputPhoneValue) {
             _this.showZanToast("手机号不能为空");
@@ -120,7 +140,7 @@ Page({
             success: function (res) {
               if (res.data.status == 1) {
                 wx.setStorageSync("token", res.data.result.token)
-                wx.navigateTo({
+                wx.reLaunch({
                   url: '../details/details'
                 })
               }
@@ -131,11 +151,11 @@ Page({
 
           })
         }
-      }
-    })
+      // }
+    // })
 
     
     
-  }
+  // }
 })
 

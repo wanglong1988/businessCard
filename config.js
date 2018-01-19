@@ -3,5 +3,5 @@
  */
 
 
-const host = { url: 'http://cardSeller-server.dev.sanqimei.com' }
- module.exports = host
+const host = { url: 'https://cardSeller-server.show.sanqimei.com' }
+ module.exports = host 

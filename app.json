@@ -1,8 +1,9 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/details/details"
-   
+    
+    "pages/details/details",
+    "pages/productdetail/detail",
+    "pages/index/index"
     
   ],
   "window":{
@@ -10,5 +11,6 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "商圈一卡通-商家端",
     "navigationBarTextStyle":"black"
-  }
+  },
+  "debug": false
 }

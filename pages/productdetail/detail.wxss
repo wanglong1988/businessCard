@@ -1,0 +1,39 @@
+@import '../../utils/toast/index.wxss';
+
+.seller-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.seller-item {
+  /* height: 272rpx; */
+  padding: 48rpx 30rpx 48rpx 30rpx;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 1);
+}
+
+.seller-title {
+  font-size: 32rpx;
+  font-family: PingFang-SC-Medium;
+  color: rgba(17, 17, 17, 1);
+  margin-bottom: 26rpx;
+  font-weight: bold;
+}
+
+.seller-text-grey {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  color: rgba(153, 153, 153, 1);
+}
+ image{
+ vertical-align: top;
+}
+.mb10 {
+  margin-bottom: 18rpx;
+}
+
+.seller-text-grey>view {
+  margin-bottom: 10rpx;
+}
+

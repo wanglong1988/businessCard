@@ -21,7 +21,7 @@
       <view class="page-section">
         <view class="page-section-title">接收到的验证码</view>
             <view class="page-input">
-              <input class="weui-input code" name="code" placeholder-class="psection" placeholder="点击输入验证码" bindinput="bindCodeInput"/>
+              <input class="weui-input code" name="code" placeholder-class="psection" placeholder="点击输入验证码" bindinput="bindCodeInput" type="number"/>
               <button class='sent' bindtap="setcode"  disabled="{{!canClick}}">{{canClick?"发送验证码":time+"s"}}</button>
             </view>
       </view>

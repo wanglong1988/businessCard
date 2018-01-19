@@ -1,7 +1,7 @@
 @import "../../utils/toast/index.wxss";
 .verify-title{
   width: 650rpx;
-   margin: 70rpx 50rpx;
+   margin: 70rpx 50rpx 0 50rpx;
 }
 .psection{
   color:#ccc
@@ -30,20 +30,21 @@
 }
 .verify-swiper{
   width: 690rpx;
-  margin-top: 80rpx;
+  margin-top: 50rpx;
 }
 .ver-list{
   overflow: hidden;
+  position: relative;
   
   background: #fff;
-  padding: 30rpx
+  padding: 20rpx
 }
 swiper-item{
-
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 swiper{
   height: 210rpx;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  
 }
 .ver-img{
   width:240rpx;
@@ -55,7 +56,7 @@ swiper{
   height: 150rpx
 }
 .ver-info{
-   width:360rpx;
+   width:390rpx;
   height: 150rpx;
   float: right
 }
@@ -90,7 +91,7 @@ swiper{
         border-width:12rpx;
         border-style:solid;
         border-color:#fafafa  #fafafa  #CEAB6B  #fafafa;
-    top:-20rpx;
+    top:-24rpx;
     left: 100rpx;
 }
 .verify-zs{
@@ -104,19 +105,20 @@ swiper{
   font-weight: bold 
 }
 .verify-mx{
-  border-top:1px solid #D6D5D3;
+  border-top:0.5rpx solid #D6D5D3;
+   border-bottom:0.5rpx solid #D6D5D3;
   margin-top: 40rpx;
-line-height: 80rpx;
-height: 80rpx;
+line-height: 90rpx;
+height: 90rpx;
 font-size: 28rpx;
 font-weight: bold;
 padding: 0 30rpx;
 }
 .verify-list{
-    border-top:1px solid #D6D5D3;
-line-height: 80rpx;
-height: 80rpx;
-font-size: 28rpx;
+    border-bottom:0.5rpx solid #D6D5D3;
+line-height: 90rpx;
+height: 90rpx;
+font-size: 26rpx;
 padding: 0 30rpx;
 }
 .time{
@@ -125,10 +127,43 @@ padding: 0 30rpx;
   float: left
 }
 .phone{
-  width: 30%;text-align: left;
+  width: 50%;text-align: right;
   float: left
 }
 .code{
   width: 20%;text-align: left;
   float: left
+}
+.hover-img{
+   position: absolute;
+   width: 630rpx;
+   height:150rpx;
+   overflow: hidden
+}
+.verify-welcome{
+  width: 690rpx;
+  line-height:80rpx;
+  height:80rpx;
+   padding: 0 30rpx;
+   font-size: 28rpx;
+   /* border-top:0.5rpx solid #D6D5D3;
+  border-bottom:0.5rpx solid #D6D5D3; */
+  color:#111;
+
+}
+.sellername{
+  font-weight: bold;
+  display: inline-block
+}
+.loginout{
+  float: right
+}
+.scancode{
+  text-align: center;
+  width: 100%;
+  margin-top: 30rpx;
+}
+.scancode image{
+  width: 312rpx;
+  height: 296rpx;
 }
